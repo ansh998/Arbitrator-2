@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_dark"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolb"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!--TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Syncronisation Setting"
+        android:textColor="@color/white"
+        android:textSize="25sp" /-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="Sync  "
+            android:textColor="#ff0000"
+            android:textOff="Off"
+            android:textOn="On"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"></View>
+
+    <RelativeLayout
+        android:id="@+id/y"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/c"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="13dp"
+            android:paddingLeft="20dp"
+            android:text="Devices:"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+
+        <Spinner
+            android:id="@+id/d"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/c"
+            android:background="@color/white"
+            android:dropDownSelector="@color/white"
+            android:popupBackground="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/z"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/c"
+        android:layout_marginTop="13dp"
+        android:background="#cccccc"
+        android:paddingBottom="16dp"></View>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+        <!--Name -->
+        <TableRow>
+
+            <TextView
+                android:id="@+id/e"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_column="1"
+                android:layout_below="@+id/z"
+                android:layout_marginTop="13dp"
+                android:paddingLeft="20dp"
+                android:text="Device Name :"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/f"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_column="2"
+                android:layout_below="@id/z"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="13dp"
+                android:layout_toRightOf="@id/e"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <!-- type -->
+        <TableRow>
+
+            <TextView
+                android:id="@+id/g"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_column="1"
+                android:layout_below="@+id/e"
+                android:layout_marginTop="13dp"
+                android:paddingLeft="20dp"
+                android:text="Device Type :"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/h"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_column="2"
+                android:layout_below="@id/f"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="13dp"
+                android:layout_toRightOf="@id/g"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+        </TableRow>
+
+        <!-- id -->
+        <TableRow>
+
+            <TextView
+                android:id="@+id/i"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_column="1"
+                android:layout_below="@+id/g"
+                android:layout_marginTop="13dp"
+                android:paddingLeft="20dp"
+                android:text="Device ID :"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/j"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_column="2"
+                android:layout_below="@id/h"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="13dp"
+                android:layout_toRightOf="@id/i"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </TableRow>
+        <!-- Status -->
+        <TableRow>
+
+            <TextView
+                android:id="@+id/k"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_column="1"
+                android:layout_below="@+id/i"
+                android:layout_marginTop="13dp"
+                android:paddingLeft="20dp"
+                android:text="Status :"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/l"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_column="2"
+                android:layout_below="@id/j"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="13dp"
+                android:layout_toRightOf="@id/k"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btn_remdev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="20dp"
+        android:text="Remove Device"
+        android:textColor="#cccccc" />
+
+    <View
+        android:id="@+id/zz"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/c"
+        android:layout_marginTop="13dp"
+        android:background="#cccccc"
+        android:paddingBottom="16dp" />
+
+    <Switch
+        android:id="@+id/alert_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Turn  on synced Call and notification alerts   "
+        android:textColor="#cccccc"
+        android:textSize="15sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_syncalarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="20dp"
+        android:text="My Alarms"
+        android:textColor="#cccccc"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_syncnote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="20dp"
+        android:text="My Notes"
+        android:textColor="#cccccc"
+        android:visibility="invisible" />
+
+</LinearLayout>
